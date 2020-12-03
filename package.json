@@ -4,12 +4,16 @@
   "description": "Proyecto NodeSend",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon ./index.js",
-    "start":"node ./index.js"
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
   },
   "author": "Gerardo Rosas",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.7.0",
+    "mongoose": "^5.11.0"
   }
 }
