@@ -71,6 +71,7 @@ exports.obtenerEnlace = async (req, res, next) => {
         req.archivo = nombre;
 
         //Eliminar la entrada de la BD
+        await Enlaces.findByIdAndRemove(req.params.url);
         next() //Pasa el siguiente controlador
     }else{
         //Si las descargas son > a 1 - Restar una descarga
